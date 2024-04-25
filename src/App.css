@@ -1,38 +1,197 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container {
+  width: 1000px;
+}
+
+/* -----------------header------------------ */
+
+header {
+  padding: 2rem;
+  width: calc(100% - 4rem);
+}
+
+.logo {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.input-div {
+  padding-left: 1rem;
+  width: calc(500px - 2rem);
+  height: 3rem;
+  background-color: black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+.input-div input {
+  border: none;
+  outline: none;
+  padding-right: 0.5rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  flex-grow: 1;
+}
+
+.input-div svg {
+  width: 4rem;
+  height: 100%;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.error {
+  margin-top: 0.5rem;
+  color: red;
+  font-size: 1.2rem;
+}
+
+
+/* --------------content---------------- */
+section {
+  padding: 2rem;
+  width: calc(100% - 4rem);
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.city {
+  border-bottom: 1px solid white;
+  text-align: center;
+  padding-bottom: 0.5rem !important;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.temp {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon-div {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 1rem;
+}
+
+.icon-div img {
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+}
+
+.temp-value {
+  font-size: 2rem;
+  color: rgb(145, 145, 145);
+}
+
+.temp-value span {
+  font-size: 4rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-grow: 1;
+  margin-right: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.desc {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.temp-var {
+  font-size: 2rem;
+}
+
+
+.data {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------------Media tag------------- */
+
+@media screen and (max-width: 800px) {
+  .temp {
+    flex-direction: column;
+    gap: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .weather {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-grow: 0;
+    margin-right: 0;
+  }
+
+  .data {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .input-div {
+    width: calc(100% - 2rem);
+  }
+
+  .input-div input {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .temp-value {
+    font-size: 1.2rem;
+  }
+
+  .temp-value span {
+    font-size: 2.5rem;
+  }
+
+  .desc {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .temp-var {
+    font-size: 1.2rem;
   }
 }
