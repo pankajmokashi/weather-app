@@ -4,11 +4,11 @@
 	- Open your terminal or command prompt.
 	- Navigate to the directory where you want to clone the repository.
 	- Use the git clone command followed by the repository URL to clone the repository locally. 
-  - 	git clone https://github.com/username/repository-name.git
+  - 	git clone https://github.com/pankajmokashi/weather-app.git
 
 3. Navigate to the Project Directory:
 	- Once the repository is cloned, navigate to the project directory using the cd command.
-  - 	cd repository-name
+  - 	cd weather-app
 
 4. Install Dependencies:
 	- React projects typically use npm (Node Package Manager) to manage dependencies. Run the following command to install the project's dependencies:
