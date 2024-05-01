@@ -18,7 +18,7 @@
 
 - Navigate to the Project Directory:
     - Once the repository is cloned, navigate to the project directory using the cd command.
-  	- cd weather-app
+      	- cd weather-app
 
 - Install Dependencies:
     - React projects typically use npm (Node Package Manager) to manage dependencies. Run the following command to install the project's dependencies:
@@ -28,7 +28,7 @@
 
 - Run the Development Server:
     - After the dependencies are installed, you can start the development server using the npm start command:
-	- npm start
+      	- npm start
 
 ---
 
